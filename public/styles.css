@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Aldrich', sans-serif;
+    background: url('assets/CryptoHott.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw; /* Ensure body takes full width */
+    overflow: hidden; /* Hide scrollbars */
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height */
+    width: 100vw;  /* Full width */
+    max-width: none; /* Remove max-width restriction */
+    background: transparent;
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove shadow */
+    overflow: hidden; /* Hide overflow */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: gold;
+    padding: 20px;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gold;
+}
+
+.info .forged, .info .furnace {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#timer {
+    background: black;
+    color: gold;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Aldrich', sans-serif;
+}
+
+#claimButton {
+    background-color: black;
+    color: gold;
+    padding: 20px;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 15px; /* Rounded edges */
+    width: 80%; /* Wider button */
+    text-align: center; /* Center text inside button */
+    position: relative;
+}
+
+#claimButton:hover {
+    background-color: #333;
+}
+
+.bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px; /* Slightly rounded edges */
+    position: absolute; /* Position it at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
+}
+
+.bottom-menu .button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: gold;
+    font-size: 0.8em;
+    cursor: pointer;
+    border-radius: 10px; /* Slightly rounded edges */
+    font-family: 'Aldrich', sans-serif;
+}
+
+.bottom-menu .button:hover {
+    background-color: #333;
+}
+
+footer {
+    text-align: center;
+    margin-top: 0;
+    position: relative;
+}
+
+.powered-by {
+    color: gold;
+    font-size: 0.8em;
+    font-family: 'Aldrich', sans-serif;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+    position: absolute; /* Position it above the bottom-menu */
+    bottom: 60px; /* Adjust this value as needed */
+    width: calc(100% - 20px); /* Full width with padding */
+    left: 10px; /* Center it with padding */
+    text-align: center;
+}
